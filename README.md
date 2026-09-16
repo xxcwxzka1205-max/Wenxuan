@@ -93,6 +93,16 @@ npm run build
 
 如果使用平台的 Git 自动部署功能，将项目连接到代码仓库后，按照以上配置创建部署即可。
 
+### 使用 GitHub Pages 自动发布
+
+项目已配置 `.github/workflows/deploy-pages.yml`。将代码推送到 `main` 分支后，GitHub Actions 会自动完成依赖安装、生产构建和 Pages 发布，也可以在 Actions 页面手动运行该工作流。
+
+首次使用时，请在 GitHub 仓库中打开 `Settings > Pages`，将 `Build and deployment > Source` 设置为 `GitHub Actions`。发布完成后，访问地址通常为：
+
+```text
+https://<你的 GitHub 用户名>.github.io/<仓库名>/
+```
+
 ### 本地预览生产版本
 
 ```bash
