@@ -1317,14 +1317,14 @@ export default function App() {
           <div className="w-36 flex flex-col gap-3">
             {/* Digital Display */}
             <div className="grid-double digital-display p-3 flex flex-col justify-between relative">
-              <div className="flex justify-between items-start text-[10px] text-gray-400">
+              <div className="flex justify-between items-start text-[10px] text-orange-400">
                 <div className="leading-tight">
                   {days[now.getDay()]}, {months[now.getMonth()]}<br/>{now.getDate()}
                 </div>
                 {/* Battery Icon */}
-                <div className="w-5 h-2.5 border border-gray-500 rounded-sm relative mt-0.5">
-                  <div className="absolute right-[-3px] top-[2px] w-[2px] h-[4px] bg-gray-500"></div>
-                  <div className="w-3/4 h-full bg-gray-400"></div>
+                <div className="w-5 h-2.5 border border-orange-400 rounded-sm relative mt-0.5">
+                  <div className="absolute right-[-3px] top-[2px] w-[2px] h-[4px] bg-orange-400"></div>
+                  <div className="w-3/4 h-full bg-orange-400"></div>
                 </div>
               </div>
               <div className="flex items-baseline justify-center mt-1">
